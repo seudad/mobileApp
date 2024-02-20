@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupCondMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonCondModeAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Автоматический" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCondModeVent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вентиляция" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCondModeHeating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нагрев" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCondModeChilling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Охлаждение" />
+
+
+    </RadioGroup>
+
+</RelativeLayout>

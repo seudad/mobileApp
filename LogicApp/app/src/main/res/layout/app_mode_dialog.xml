@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupApplicationMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonLocalMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Локальный режим" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRemoteMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удаленный режим" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDemoMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Демо режим" />
+
+    </RadioGroup>
+
+</RelativeLayout>

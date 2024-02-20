@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainScreenItem1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/textViewSpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SPACE"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewMainValue1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text=" "
+        android:textColor="@color/colorLight"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewMainName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text=" "
+        android:textColor="@color/colorLight1"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewSpace2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SPACE"
+        android:textColor="@color/colorPrimary"
+        android:textSize="48sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewMainSystem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text=" "
+        android:textColor="@color/colorLight"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/textViewSystemState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text=" "
+        android:textColor="@color/colorLight1"
+        android:textSize="16sp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/textViewSpace3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SPACE"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"></TextView>
+
+
+</LinearLayout>

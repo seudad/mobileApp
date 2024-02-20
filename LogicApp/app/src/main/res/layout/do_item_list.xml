@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/textViewDoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="пусто"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewDoState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="текущее состояние: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewDoMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="режим: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewDoHandState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="сост.в ручном режиме: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewDoInversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="инверсия: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+</LinearLayout>

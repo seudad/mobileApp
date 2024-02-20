@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#171B2E"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/textViewSpace1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SPACE"
+        android:textColor="#171B2E"
+        android:textSize="4sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <com.oceantechrus.max.logicapp.Windmill
+            android:id="@+id/windmill_small"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom"
+            app:windLengthPerent="0.35"
+            app:windmillColors="@color/colorLight" />
+
+
+        <TextView
+            android:id="@+id/textViewMainAoValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="значение"
+            android:textColor="@color/colorLight"
+            android:textSize="16sp"></TextView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewSpace2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SPACE"
+        android:textColor="#171B2E"
+        android:textSize="4sp"></TextView>
+
+
+</LinearLayout>

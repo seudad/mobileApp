@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupFanSpeedNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Понедельник" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вторник" />
+
+        <RadioButton
+            android:id="@+id/radioButtonWed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Среда" />
+
+        <RadioButton
+            android:id="@+id/radioButtonThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Четверг" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пятница" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Суббота" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Воскресенье" />
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/textViewUiName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="пусто"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewUiValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="текущее значение: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewUiMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="режим: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewUiHandValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="значение в ручном режиме: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewUiOffset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="смещение: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewUiOffsetR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="смещение R: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewUiMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="минимальное значение: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewUiMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="максимальное значение: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewUiSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="тип датчика: "
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="18sp"></TextView>
+</LinearLayout>

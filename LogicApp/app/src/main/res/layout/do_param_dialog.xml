@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewDoModeRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Режим"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDoModeRadio">
+
+            <RadioButton
+                android:id="@+id/radioButtonDoAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Автоматический" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDoHand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ручной" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewDoHandStateRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupDoMode"
+            android:text="Состояние в ручном режиме"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDoHandModeState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDoHandStateRadio">
+
+            <RadioButton
+                android:id="@+id/radioButtonDoShort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Замкнуто" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDoOpen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Разомкнуто" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewDoInversionRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupDoHandModeState"
+            android:text="Инверсия"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDiInversion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDoInversionRadio">
+
+            <RadioButton
+                android:id="@+id/radioButtonDoInversionOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Отключена" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDoInversionOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Включена" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+</RelativeLayout>

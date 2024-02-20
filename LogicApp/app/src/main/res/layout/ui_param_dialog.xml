@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewUiHandModeValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Значение в ручном режиме"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextUiHandValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUiHandModeValue"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewUiMaxValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUiHandValue"
+            android:text="Максимальное значение"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextUiMaxValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUiMaxValue"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewUiMinValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUiMaxValue"
+            android:text="Минимальное значение"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextUiMinValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUiMinValue"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewUiOffsetValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUiMinValue"
+            android:text="Смещение"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextUiOffsetValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUiOffsetValue"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewUiModeRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextUiMinValue"
+            android:text="Режим"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupUiMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUiModeRadio">
+
+            <RadioButton
+                android:id="@+id/radioButtonUiAuto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Автоматический" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUiHand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ручной" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewUiSensorRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroupUiMode"
+            android:text="Тип датчика"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupUiSensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewUiSensorRadio">
+
+            <RadioButton
+                android:id="@+id/radioButtonUiNi1000TK5000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ni1000TK5000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUi010V"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0-10V" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUi020MA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0-20mA" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUi420MA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4-20mA" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUiDryContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Сухой контакт" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUiPT1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pt1000" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

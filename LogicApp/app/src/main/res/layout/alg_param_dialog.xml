@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxIgnition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Розжиг" />
+
+    <CheckBox
+        android:id="@+id/checkBoxChillerDisabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxIgnition"
+        android:checked="false"
+        android:text="Запрет ККБ" />
+
+</RelativeLayout>

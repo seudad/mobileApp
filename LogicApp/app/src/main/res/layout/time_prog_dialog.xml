@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTimeProgOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Включение"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTpSecOn"
+        app:layout_constraintStart_toStartOf="@+id/editTextTpHoursOn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTimeProgOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Отключение"
+        android:textColor="@android:color/holo_blue_light"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTpSecOff"
+        app:layout_constraintStart_toStartOf="@+id/editTextTpHoursOff"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTpHoursOn"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeProgOn" />
+
+    <EditText
+        android:id="@+id/editTextTpMinutesOn"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00"
+        app:layout_constraintStart_toEndOf="@+id/textViewTp1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeProgOn" />
+
+    <TextView
+        android:id="@+id/textViewTp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTpHoursOn"
+        app:layout_constraintStart_toEndOf="@+id/editTextTpHoursOn"
+        app:layout_constraintTop_toTopOf="@+id/editTextTpHoursOn" />
+
+    <TextView
+        android:id="@+id/textViewTp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTpMinutesOn"
+        app:layout_constraintStart_toEndOf="@+id/editTextTpMinutesOn"
+        app:layout_constraintTop_toTopOf="@+id/editTextTpMinutesOn"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextTpSecOn"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00"
+        app:layout_constraintStart_toEndOf="@+id/textViewTp2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeProgOn" />
+
+    <EditText
+        android:id="@+id/editTextTpSecOff"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeProgOff" />
+
+    <TextView
+        android:id="@+id/textViewTp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTpSecOff"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTpSecOff"
+        app:layout_constraintTop_toTopOf="@+id/editTextTpSecOff" />
+
+    <EditText
+        android:id="@+id/editTextTpMinutesOff"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTp3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeProgOff" />
+
+    <TextView
+        android:id="@+id/textViewTp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTpMinutesOff"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTpMinutesOff"
+        app:layout_constraintTop_toTopOf="@+id/editTextTpMinutesOff" />
+
+    <EditText
+        android:id="@+id/editTextTpHoursOff"
+        android:layout_width="28dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="00"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTp4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeProgOff" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTpMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Пн"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTpMinutesOn" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTpTue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Вт"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTpMon"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTpMinutesOn" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTpWed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Ср"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTpTue"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTpMinutesOn" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTpThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Чт"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTpWed"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTpMinutesOn" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTpFri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Пт"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTpMon" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTpSat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Сб"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTpFri"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTpTue" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTpSun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Вс"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTpSat"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTpWed" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTpSun">
+
+    <RadioButton
+        android:id="@+id/radioButtonTpEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Активна" />
+
+    <RadioButton
+        android:id="@+id/radioButtonTpDisabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Неактивна" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
